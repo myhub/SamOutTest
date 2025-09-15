@@ -1,5 +1,4 @@
 from nlp_mnist import NlpMnist
-# from tf.model import Transformer
 from torch.utils.data import DataLoader
 from torch import nn 
 import torch.optim
@@ -181,7 +180,7 @@ for epoch in range(5000):
         train_loss += loss.detach().item()
         loss.backward()
         optimizer.step()
-        # net.encoder.renew(lr)
+
     lr_scheduler.step()
 
     print(epoch+1, f"train_loss {train_loss:.5f}, lr {lr:.3f}")

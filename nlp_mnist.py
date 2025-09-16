@@ -66,7 +66,7 @@ class NlpMnist(Dataset):
 
         assert len(ain) <= self.seq_len
 
-        ain =  self.BLANK * (self.seq_len - len(ain) - 2)  + ain +self.BLANK*2
+        # ain =  self.BLANK * (self.seq_len - len(ain) - 2)  + ain +self.BLANK*2
         
         aout = [ord(aout[0]) - ord('0')]
         ain = [self.char2idx[_] for _ in ain]

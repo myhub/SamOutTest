@@ -5,6 +5,16 @@ python test1.py
 ##### 测试结果
 测试模型的查询能力
 ```
+4992 train_loss 8.55922, lr 0.008
+4993 train_loss 8.46156, lr 0.008
+4994 train_loss 8.87754, lr 0.008
+4995 train_loss 8.39430, lr 0.008
+4996 train_loss 8.25178, lr 0.008
+4997 train_loss 7.59533, lr 0.008
+4998 train_loss 8.54427, lr 0.008
+4999 train_loss 7.73193, lr 0.008
+5000 train_loss 8.47672, lr 0.008
+......
 g77=4;b13=7;x78=3;o88=4;x94=1;s54=1;print(o88)  3 != 4(expected)
 g46=2;x95=8;z37=3;z25=5;j12=1;x22=0;t36=7;print(j12)  0 != 1(expected)
 c65=0;b29=9;k34=3;u55=5;z2=6;d22=5;f75=5;y9=7;print(d22)  7 != 5(expected)

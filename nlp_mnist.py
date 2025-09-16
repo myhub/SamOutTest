@@ -66,10 +66,12 @@ class NlpMnist(Dataset):
 
         assert len(ain) <= self.seq_len
 
-        # ain =  self.BLANK * (self.seq_len - len(ain) - 2)  + ain +self.BLANK*2
+        # ain =  self.BLANK * (self.seq_len - len(ain) - 2)  + ain + ' '*2
+        ain =  self.BLANK * (self.seq_len - len(ain))  + ain
         
         aout = [ord(aout[0]) - ord('0')]
         ain = [self.char2idx[_] for _ in ain]
+        assert len(ain) == self.seq_len
 
         return torch.LongTensor(ain), torch.LongTensor(aout)
 
